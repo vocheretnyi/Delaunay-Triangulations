@@ -39,7 +39,7 @@ Edges DelaunayTriangulation::solve(const vector<Point>& points) {
 
     int mid = (n + 1) / 2;
 
-    vector<Point> convexHull = ConvexHull().getConvexHull(points);
+    vector<Point> convexHull = ConvexHull().getLowerConvexHull(points);
 
     Point mid_point = points[mid];
     Point A;

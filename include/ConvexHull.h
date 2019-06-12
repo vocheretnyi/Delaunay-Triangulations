@@ -16,12 +16,11 @@ public:
 
     ConvexHull() = default;
 
-    vector<Point> getConvexHull(const vector<Point>&) const;
+    vector<Point> getLowerConvexHull(vector<Point> a) const;
 
 private:
 
-    static bool cw(Point a, Point b, Point c);
-
+    // check if points create counter-clockwise angle
     static bool ccw (Point a, Point b, Point c);
 };
 

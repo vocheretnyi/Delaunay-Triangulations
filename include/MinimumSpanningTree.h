@@ -17,6 +17,7 @@ class MinimumSpanningTree {
 public:
     MinimumSpanningTree();
 
+    // return pair of mst edges and summary length of edges in mst
     template <typename D>
     pair<vector<GraphEdge<V, D>>, D> getMST(vector<GraphEdge<V, D>> edges);
 

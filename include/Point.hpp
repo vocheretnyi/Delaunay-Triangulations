@@ -18,6 +18,8 @@ public:
 
     Point& operator=(const Point& other) = default;
 
+    Point(const Point&) = default;
+
     double getX() const {
         return x_;
     }

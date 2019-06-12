@@ -39,8 +39,8 @@ void display() {
     double T = 0.75;
 
     // Draw triangulations
-    glLineWidth(2.0);
-    glColor3f(0.69f, 0.0f, 0.0f);
+    glLineWidth(1.5);
+    glColor3f(0.859f, 0.859f, 0.859f);
     glBegin(GL_LINES);
     for (const auto& item : edges) {
         const Point& from = item.first;

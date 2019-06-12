@@ -12,12 +12,7 @@ public:
         from(_from), to(_to), length(_length) {
     }
 
-    GraphEdge& operator=(const GraphEdge& other) {
-        from = other.from;
-        to = other.to;
-        length = other.length;
-        return *this;
-    }
+    GraphEdge& operator=(const GraphEdge& other) = default;
 
     const Vertex& getFrom() const {
         return from;
